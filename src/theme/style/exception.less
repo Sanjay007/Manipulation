@@ -1,0 +1,133 @@
+.and-group {
+    position: relative;
+
+    .icons {
+        z-index: 3;
+        background-color: white;
+        cursor: pointer;
+        color: @blue-5;
+    }
+
+    .negate-icon {
+        .icons();
+        font-size: 20px;
+        position: absolute;
+        right: 55px;
+    }
+
+    .add-and-icon {
+        .icons();
+        position: absolute;
+        left: 10px;
+
+        &[disabled] {
+            pointer-events: none;
+            color: @blue-3;
+        }
+    }
+
+    .duplicate-exception {
+        margin-left: 27px;
+        margin-top: 6px;
+    }
+
+
+    input[name='messagePath']::selection {
+        background: rgba(250, 227, 20, 0.4);
+    }
+
+    .ui.input {
+        margin-left: 8px;
+        flex: 1;
+
+        &>input {
+            padding-right: 30px;
+        }
+    }
+
+
+
+
+    &>div:first-child .ui.input::before {
+        content: '';
+        border: 1px solid rgba(0, 0, 0, .15);
+        border-bottom: 0px;
+        border-right: 0px;
+        position: relative;
+        width: 18px;
+        height: 45px;
+        top: 18px;
+        right: 3px;
+        background-color: white;
+    }
+
+    &>div:last-child .ui.input::before {
+        content: '';
+        border: 1px solid rgba(0, 0, 0, .15);
+        border-top: 0px;
+        border-right: 0px;
+        position: relative;
+        width: 18px;
+        height: 25px;
+        top: -6px;
+        right: 3px;
+        background-color: white;
+    }
+
+    &>div .ui.input::before {
+        content: '';
+        border: 1px solid rgba(0, 0, 0, .15);
+        border-bottom: 0px;
+        border-right: 0px;
+        border-top: 0px;
+        position: relative;
+        width: 18px;
+        height: 60px;
+        right: 3px;
+        background-color: white;
+    }
+
+    &>div:only-child .ui.input::before {
+        border: none;
+    }
+
+}
+
+.exception-search {
+    position: relative;
+    margin-left: 8px;
+
+    .ui.input {
+        flex: 1;
+
+        &>input {
+            padding-right: 90px;
+        }
+    }
+
+    .search-icons {
+        position: absolute;
+        right: 12px;
+        background-color: white;
+
+        >svg {
+            cursor: pointer;
+            color: @blue-5;
+            font-size: 16px;
+        }
+
+        >svg:not(svg:first-of-type) {
+            margin-left: 16px;
+        }
+    }
+
+}
+
+.search-icon {
+    cursor: pointer;
+    color: @blue-5;
+    border: 1px solid gray;
+    box-sizing: content-box;
+    padding: 4px;
+    border-radius: 5px;
+}

@@ -1,0 +1,42 @@
+.NumberInputGroup {
+    button {
+        .secondary-button();
+        padding: 10px 12px;
+    }
+
+    button:first-child {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    button:last-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    button:hover {
+        border: 1px solid @blue;
+    }
+
+    button[disabled] {
+        pointer-events: none;
+        color: @blue-3;
+    }
+
+    input {
+        border-radius: 0 !important;
+        border: 1px solid @black-transparent-15;
+        border-left: 0 !important;
+        border-right: 0 !important;
+        width: 48px !important;
+        padding-left: 12px;
+    }
+
+    input:focus {
+        border: 1px solid @blue;
+    }
+
+    input:hover {
+        border: 1px solid @blue;
+    }
+}

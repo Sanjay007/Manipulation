@@ -1,0 +1,590 @@
+html {
+    height: 100% !important;
+}
+
+body {
+    height: 100% !important;
+    background: #fff !important;
+    margin: 0 !important;
+    padding: 0;
+}
+
+#aim_root {
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    height: auto;
+}
+
+
+// LOGIN FORM CHANGES
+[class*='overrideByAim'][class*='new-singularity-login'] {
+    height: 100vh;
+    background-color: white;
+    background: transparent;
+}
+
+.overrideByAim {
+    overflow: hidden;
+}
+
+.overrideByAim:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    z-index: -1;
+}
+
+[class*='overrideByAim'] .login-banner {
+    position: relative;
+}
+
+[class*='overrideByAim'] .login-banner:after {
+    content: '';
+    position: absolute;
+    top: -120px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vw;
+    // box-shadow: -2px 0px 9px rgba(0, 0, 0, 0.57);
+    background: #0284d41c;
+    ;
+    transform: rotate(350deg);
+    z-index: -1;
+    width: 105%;
+}
+
+// LOGIN FORM CHANGES ENDS
+
+
+
+
+label {
+    color: #555;
+}
+
+
+.config-step-grids {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.config-step-grids>div {
+    border: 1px solid rgb(169, 169, 169);
+    background-color: white;
+    color: @black-transparent-55;
+    border-radius: 6px;
+    padding: 6px 8px;
+    line-height: 16px;
+    margin-left: 14px;
+    margin-bottom: 18px;
+    transition: 0.4s;
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.config-step-grids>div.disabled {
+    color: @black-transparent-25;
+    pointer-events: none;
+}
+
+.config-step-grids>div>span {
+    position: absolute;
+    top: -11px;
+    right: -8px;
+    width: 19px;
+    height: 19px;
+    background: rgba(255, 153, 0, 0.925);
+    border: 1px solid rgba(255, 153, 0, 0.699);
+    line-height: 1;
+    padding: 3px 3px;
+    font-size: 10px;
+    border-radius: 10px;
+    color: #333;
+}
+
+.config-step-grids.autoheal-suggestions>div>span {
+    background: rgb(206, 228, 196, 0.85);
+    border: 1px solid rgb(206, 228, 196, 0.69);
+}
+
+.config-step-grids>div:not(.disabled):hover {
+    background-color: @white;
+    color: @blue;
+    border: 1px solid @blue;
+}
+
+.config-step-grids>div.config-step-active {
+    background-color: @white;
+    color: @blue;
+    border: 1px solid @blue;
+}
+
+/* .config-step-grids>div:last-child {
+    grid-column-start: 3;
+    grid-column-end: 5;
+} */
+
+
+.circularRadius {
+    border-radius: 500rem !important
+}
+
+
+.selectedFormDiv {
+    z-index: 10;
+    position: relative;
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    z-index: 10;
+    box-shadow: 0px 10px 10px -8px rgba(34, 36, 38, .2), 0px -10px 9px -10px rgba(34, 36, 38, .2);
+}
+
+
+.smallAll>* {
+    font-size: 12px !important;
+}
+
+
+.breakWord {
+    word-wrap: break-word !important;
+    width: 55% !important;
+    max-width: 600px !important;
+}
+
+
+.manipulation-method-dropdown .ui.tiny.header .sub.header {
+    font-size: .7rem !important;
+}
+
+.less-padding-grid {
+    padding: 10px
+}
+
+.less-padding-grid .column {
+    padding: 5px !important;
+}
+
+.autopop-container * {
+    font-size: 10px !important;
+}
+
+.autopop-container .column {
+    font-size: 10px !important;
+    /* padding-top: 0.7rem !important; */
+    /* padding-bottom: 0.6rem !important; */
+}
+
+.autopop-container .segment {
+    font-size: 10px !important;
+    /* padding: 0.7rem !important; */
+    margin: 0.5rem 0rem !important;
+}
+
+.autopop-container .ui.mini.button,
+.autopop-container .ui.mini.buttons .button,
+.autopop-container .ui.mini.buttons .or {
+    font-size: 0.5rem !important;
+}
+
+.fieldList-autopop .column {
+    font-size: 10px !important;
+    /* padding-top: 0.6rem !important;
+        padding-bottom: 0.6rem !important; */
+}
+
+.fieldList-autopop {
+    min-width: 100% !important;
+}
+
+.autopop-container .ui.basic.buttons {
+    border: 0px !important;
+}
+
+.redBorder {
+    border: 1px solid @pink  !important;
+    padding: 3px !important;
+}
+
+.locator_helper_label .locator_helper_details {
+    display: none !important;
+}
+
+.locator_helper_label:hover .locator_helper_details {
+    display: contents !important;
+}
+
+.xml-diff-popup {
+    z-index: 110 !important;
+    width: 700px;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.suggestion_path {
+    margin-left: -14px;
+    padding: 10px;
+    background: #efefef;
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 5px;
+    width: 113%;
+}
+
+.error_select_form_div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 10;
+    border: 1px solid @red;
+}
+
+.filter-query-builder {
+    display: inline-block;
+    background: #efefef;
+    display: inline-flex;
+    width: 100%;
+}
+
+.filter-query-builder p {
+    margin: 1em 10px;
+    font-weight: 600;
+}
+
+.filter-dropdown-width {
+    width: 200px !important;
+}
+
+.filter-dropdown {
+    border: none !important;
+    margin: 4px 5px !important;
+}
+
+.filter-apply-btn {
+    padding: 12px !important;
+    height: fit-content !important;
+    width: 80px !important;
+    margin: 5px 10px !important;
+}
+
+.filter-clear-btn {
+    padding: 12px !important;
+    height: fit-content !important;
+    width: 80px !important;
+    margin: 5px 10px 5px -5px !important;
+}
+
+.filter-error {
+    display: block !important;
+    width: calc(100% - 120px) !important;
+    margin: 0 auto !important;
+    color: @pink  !important;
+    text-align: center !important;
+    padding: 1em !important;
+}
+
+.table-container {
+    display: block !important;
+    width: calc(100% - 15px) !important;
+    margin: 0 auto !important;
+}
+
+/* Locator verification CSS */
+
+
+.segment-one-container {
+    padding-right: 1em;
+    height: 83vh !important;
+    overflow: hidden;
+}
+
+.currentSegment {
+    border-right: 3px solid #efefef;
+}
+
+.aim_ui_tooling_locator_verification_container {
+    min-width: 100% !important;
+    overflow-y: auto;
+    position: fixed !important;
+    height: 99.5vh !important;
+    border-radius: unset !important;
+}
+
+.segment-info-header {
+    display: inline-flex;
+    width: 100%;
+}
+
+.segment-info-header i {
+    margin-top: 5px;
+}
+
+.next-segment-button {
+    margin-top: 7px !important;
+}
+
+.segment-pagination {
+    margin: 0px 0px 0px 30px;
+}
+
+.frame-container {
+    overflow: auto;
+}
+
+.locator-verification-header {
+    box-shadow: 0 15px 20px -20px rgba(40, 44, 63, .15) !important;
+}
+
+.search-input input {
+    font-weight: bold;
+}
+
+/* .divider {
+    border-top: 1px solid #efefef !important;
+    border-bottom: 1px solid #efefef !important;
+} */
+
+/******* configuration cheatsheet ********/
+
+.color-box {
+    padding: 5px 10px;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    margin: 0 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.color-box-wrapper {
+    display: inline-flex;
+    align-items: center;
+    float: right;
+}
+
+.color-box-plus {
+    color: @blue;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.content-wrapper {
+    display: inline-flex;
+}
+
+.footer-color-box {
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: black;
+    margin-right: 10px;
+}
+
+/* * {
+  border-radius: 0!important;
+} */
+
+
+.analysis-bottom-sheet-body {
+    width: 100%;
+    position: absolute;
+    background: white;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -15px 20px -20px rgba(40, 44, 63, .15) !important;
+    transition-timing-function: ease-in-out;
+    flex-basis: 80%;
+    transition: flex-basis 0.3s;
+}
+
+.analysis-bottom-sheet-list-wrapper {
+    margin: 10px 25px 20px 25px;
+    border-top: 1px solid #efefef;
+    padding-top: 20px;
+}
+
+/* 
+*:not(i) {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+} */
+
+.auoconfig-fieldGroup-popup {
+    max-height: 300px !important;
+    overflow-y: auto !important;
+    max-width: 500px !important;
+    overflow-x: auto !important;
+}
+
+.locator-summary {
+    margin: 0 auto !important;
+    display: block !important;
+    color: @blue ;
+    font-size: 17px !important;
+    cursor: pointer;
+}
+
+
+
+.overrideByAim .singularity-login-form {
+    padding: 10px;
+}
+
+.less-padding-grid {
+    padding: 5px !important;
+}
+
+.ui.checkbox.aimCheckbox input:checked~label::after {
+    color: @blue
+}
+
+
+.aim-customcheckbox {
+    display: flex;
+    flex-direction: column;
+    width: 8rem;
+}
+
+.aim-customcheckbox .ui.checkbox {
+    width: 60px
+}
+
+.aim-customcheckox span {
+    font-size: 12px
+}
+
+.ui.input.datasetinput input[type=number] {
+    border: none;
+    border-bottom: 1px solid lightgray;
+    font-style: italic;
+}
+
+.ui.input.datasetinput input[type=date] {
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.ui.checkbox.boldwhenchecked input:checked+label {
+    font-weight: bold;
+}
+
+.indent1 {
+    margin-left: 30px;
+}
+
+.indent2 {
+    margin-left: 60px;
+}
+
+.indent3 {
+    margin-left: 90px;
+}
+
+.gapindent {
+    margin-left: 40px;
+}
+
+.customwidth1 {
+    width: 400px;
+}
+
+.customwidth2 {
+    width: 160px;
+}
+
+.divheading {
+    background-color: lightgray;
+    color: gray;
+}
+
+.divpii {
+    border: 1px solid lightgray;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.errordiv {
+    color: @pink;
+}
+
+.errorMessage {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+
+.SemanticMessage {
+    box-shadow: none !important;
+    background: @white  !important;
+}
+
+
+.SemanticInputSearch {
+    input {
+        border-radius: 6px !important;
+        width: 300px;
+    }
+}
+
+.SemanticTableOverride {
+    td {
+        border: 0 !important
+    }
+
+}
+
+
+.VerificationStep_modal {
+    width: max-content !important;
+    max-width: 80vw !important;
+    overflow-x: auto !important;
+}
+
+.ImageStep_modal {
+    width: max-content !important;
+}
+
+.bottomBoldBorder1{
+    border-bottom: 1px solid #747474;
+  }
+
+
+@import './react-corp.less';
+@import './sites.less';
+@import './page-view.less';
+@import './ribbons.less';
+@import './nav-bar.less';
+@import './scroll-bar.less';
+@import './number-input.less';
+@import './master-form.less';
+@import './exception.less';
+@import './attribute-selector.less';
+@import './more-actions.less';

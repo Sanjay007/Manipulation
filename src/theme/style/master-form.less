@@ -1,0 +1,64 @@
+.MasterFromClass {
+
+    .ui.styled.accordion {
+        // width: 100%;
+        box-shadow: none;
+        position: relative;
+        // background: @gray-2;
+        // left: -14px;
+        // width: calc(100% + 28px) !important;
+    }
+
+    .title {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-top: 8px !important;
+        color: rgba(0, 0, 0, 0.85) !important;
+    }
+
+    .title.tablefields {
+        .title();
+        margin-top: 0px !important;
+        padding-top: 2px !important;
+    }
+
+    .content {
+        padding: 0 !important;
+        padding-bottom: 10px !important;
+    }
+
+
+    .inline-accordion {
+        >.title {
+            // margin: 0px !important;
+            border: 0 !important;
+            // padding: 0 !important;
+        }
+    }
+
+    .box-accordion {
+        background: rgba(245, 245, 245, 0.85);
+        border-radius: 6px;
+        position: relative;
+        left: -12px;
+        width: calc(100% + 24px);
+        margin-top: 12px !important;
+        padding: 12px;
+
+        >.title {
+            margin: 0px !important;
+            border: 0 !important;
+            padding: 0 !important;
+        }
+
+        .title {
+            border: 0 !important;
+        }
+
+    }
+
+}
+
+.gray-parent div:not(.row, .secondary-button-lg, .primary-button-lg, .hover-blue, .primary-button-disabled) {
+    background-color: rgba(245, 245, 245, 0.85);
+}
